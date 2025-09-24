@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    outline: none;
+    border: none;
+}
+nav a{
+   text-decoration: none;
+    color: #000000;
+}
+/* ====================header======================== */
+.text h2{
+    font-size: 4.4rem;
+    color: #000000;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.after-text{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 6px;
+  }
+  .after-text::after{
+    content: "";
+    position: absolute;
+    left:120%;
+    bottom: 5px;
+    width: 2px;
+    height:98%;
+    background: #9c9295bf;
+  }
+  .text-2{
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
+  .image img{
+    width: 200%;
+     object-fit: cover;
+    display: block;
+    transform: translatex(-50%);
+}
+/* ====================brand======================== */
+.brand{
+    background: #000000;
+    height: 80px;
+    color: #ffffff;
+}
+.brand span{
+    font-size: 2rem;
+    line-height: 80px;
+    font-weight: bolder;
+    text-transform: uppercase;
+   padding-left: 50px;
+    letter-spacing: 2px;
+}
+/* ============================================= */
+.name{
+width: 100%;
+align-items: center;
+text-align: center;
+font-size: 3rem;
+font-weight: bolder;
+text-transform: uppercase;
+}
+/* ================================== */
+.card{
+    width: 300px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    margin: 10px;
+}
+.card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.star-icon{
+    color: #ff9f00;
+    font-size: 13px;
+}
+.star-icon span{
+    color: #000000;
+    font-size: 13px;
+    margin-left: 2%;
+}
+.star-icon p{
+    font-size: 16px;
+    margin: 10px 0px;
+    color: #000;
+}
+.disc span{
+    font-size: 16px;
+    font-weight: bolder;
+    color: #989393;
+    text-decoration: line-through;
+}
+.line{
+   margin-left: 20px;
+   text-decoration: line-through;
+ 
+}
+.name button{
+    width: 20%;
+}
+/* =================== */
+.carousel-item {
+    position: relative;
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 1000px;         
+    object-fit: cover;
+    display: block;
+    z-index: 0;            
+  }
+  .carousel-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;               
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;          
+    pointer-events: none;   
+  }
+    .carousel-caption {
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;             
+        color: #fff;
+        text-align: center;
+    }
+  
